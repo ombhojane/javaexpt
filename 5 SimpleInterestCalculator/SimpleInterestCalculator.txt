@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class import java.util.Scanner;
+
+public class SimpleInterestCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input principal amount
+        System.out.print("Enter the principal amount: ");
+        double principal = scanner.nextDouble();
+
+        // Input interest rate
+        System.out.print("Enter the annual interest rate (in percentage): ");
+        double interestRate = scanner.nextDouble();
+
+        // Input time period (in years)
+        System.out.print("Enter the time period (in years): ");
+        double time = scanner.nextDouble();
+
+        // Calculate simple interest
+        double simpleInterest = (principal * interestRate * time) / 100.0;
+
+        System.out.println("Principal Amount: $" + principal);
+        System.out.println("Interest Rate: " + interestRate + "%");
+        System.out.println("Time Period: " + time + " years");
+        System.out.println("Simple Interest: $" + simpleInterest);
+
+        scanner.close();
+    }
+}
+ {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input principal amount
+        System.out.print("Enter the principal amount: ");
+        double principal = scanner.nextDouble();
+
+        // Input interest rate
+        System.out.print("Enter the annual interest rate (in percentage): ");
+        double interestRate = scanner.nextDouble();
+
+        // Input time period (in years)
+        System.out.print("Enter the time period (in years): ");
+        double time = scanner.nextDouble();
+
+        // Calculate simple interest
+        double simpleInterest = (principal * interestRate * time) / 100.0;
+
+        System.out.println("Principal Amount: ₹" + principal);
+        System.out.println("Interest Rate: " + interestRate + "%");
+        System.out.println("Time Period: " + time + " years");
+        System.out.println("Simple Interest: ₹" + simpleInterest);
+
+        scanner.close();
+    }
+}

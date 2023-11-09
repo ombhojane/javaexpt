@@ -1,0 +1,46 @@
+public class Vehicle {
+    private String make;
+    private String model;
+    private int year;
+
+    public Vehicle(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    public Vehicle(String make, String model) {
+        this(make, model, 0); // Calls the three-argument constructor with year set to 0
+    }
+
+    public Vehicle(String make) {
+        this(make, "Unknown"); // Calls the two-argument constructor with model set to "Unknown"
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+}
+
+public class VehicleInfo {
+    public static void main(String[] args) {
+        // Create Vehicle objects using different constructors
+        Vehicle vehicle1 = new Vehicle("Toyota", "Camry", 2022);
+        
+
+        // Display vehicle information
+        System.out.println("Vehicle 1 Information:");
+        System.out.println("Make: " + vehicle1.getMake());
+        System.out.println("Model: " + vehicle1.getModel());
+        System.out.println("Year: " + vehicle1.getYear());
+
+    }
+}

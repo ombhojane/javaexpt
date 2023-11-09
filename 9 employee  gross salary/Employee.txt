@@ -1,0 +1,40 @@
+public class Employee {
+    private int id;
+    private double basicSalary;
+    
+    public Employee(int id, double basicSalary) {
+        this.id = id;
+        this.basicSalary = basicSalary;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
+    public double getBasicSalary() {
+        return basicSalary;
+    }
+    
+    public double calculateGrossSalary() {
+        double da = 0.3 * basicSalary;
+        double hra = 1.25 * basicSalary;
+        double grossSalary = basicSalary + da + hra;
+        return grossSalary;
+    }
+}
+
+public class EmployeeInfo {
+    public static void main(String[] args) {
+        // Create Employee objects and initialize them
+        Employee employee1 = new Employee(101, 50000.0);
+       
+        
+        // Calculate and display Gross Salary for both employees
+        System.out.println("Employee 1 Information:");
+        System.out.println("ID: " + employee1.getId());
+        System.out.println("Basic Salary: ₹" + employee1.getBasicSalary());
+        System.out.println("Gross Salary: ₹" + employee1.calculateGrossSalary());
+        
+       
+    }
+}

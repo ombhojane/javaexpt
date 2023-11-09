@@ -1,0 +1,35 @@
+public class Vehicle {
+    private String make;
+    private String model;
+
+    public Vehicle(String make, String model) {
+        this.make = make;
+        this.model = model;
+    }
+
+    // Method overloading with different parameters
+    public void displayVehicleInfo() {
+        System.out.println("Make: " + make);
+        System.out.println("Model: " + model);
+    }
+
+    public void displayVehicleInfo(String additionalInfo) {
+        System.out.println("Make: " + make);
+        System.out.println("Model: " + model);
+        System.out.println("Additional Info: " + additionalInfo);
+    }
+}
+
+public class VehicleInfo {
+    public static void main(String[] args) {
+        // Create a Vehicle object
+        Vehicle vehicle = new Vehicle("Toyota", "Camry");
+
+        // Call overloaded methods and display the results
+        System.out.println("Calling displayVehicleInfo() without additional info:");
+        vehicle.displayVehicleInfo();
+
+        System.out.println("\nCalling displayVehicleInfo() with additional info:");
+        vehicle.displayVehicleInfo("Year: 2022");
+    }
+}

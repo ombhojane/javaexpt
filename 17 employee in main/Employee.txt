@@ -1,0 +1,38 @@
+class Employee {
+    private int id;
+    private String name;
+    private double salary;
+
+    public Employee(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+
+public class EmployeeInfo {
+    public static void main(String[] args) {
+        // Create Employee objects and initialize them
+        Employee employee1 = new Employee(101, "John Doe", 50000.0);
+        
+        // Display employee information
+        System.out.println("Employee 1 Information:");
+        System.out.println("ID: " + employee1.getId());
+        System.out.println("Name: " + employee1.getName());
+        System.out.println("Salary: ₹" + employee1.getSalary());
+
+        
+    }
+}
